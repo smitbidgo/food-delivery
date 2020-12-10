@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  background-color: #1F1A14;
+  display: flex;
+}
+.logo {
+  width: 100px;
+}
+li {
+  text-align: center;
+  width: 100px;
+  background: rgb(253,187,45);
+  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(191,166,140,1) 100%);
+}
+li:active {
+  background: rgb(253,187,45);
+  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(191,166,140,1) 100%);
+  transform: scale(1.1);
+}
+.active {
+  background: lightyellow;
+}
+
+.cart {
+  background-color: #FFB362;
+}
+.avatar {
+  background-color: #FFFFFF;
+}
+.cart-img {
+  width: 50px;
+}
+.avatar-img {
+  width: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

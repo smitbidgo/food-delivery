@@ -1,0 +1,25 @@
+.contCard
+{
+  background: rgb(253,187,45);
+  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(191,166,140,1) 100%);
+  border-radius: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 20px 20px rgb(90, 42, 4);
+  height: 300px;
+}
+
+.imgCard
+{
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.txtCard
+{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #5a3003;
+  font-size: 15pt;
+  font: 15pt icon; 
+}

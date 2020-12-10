@@ -1,0 +1,34 @@
+.itemCard {
+  background: rgb(253,187,45);
+  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(191,166,140,1) 100%);
+  width: 16rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgb(90, 42, 4);
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font: 15pt icon; 
+  text-shadow: 2px 2px 5px #5a3003;
+}
+
+.price {
+  text-align: center;
+  font: 15pt icon; 
+  text-shadow: 2px 2px 5px #5a3003;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 20px;
+}

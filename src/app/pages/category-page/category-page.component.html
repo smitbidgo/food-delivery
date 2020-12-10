@@ -1,0 +1,12 @@
+<div class="container" *ngIf="items">
+  <div class="row d-flex justify-content-center cardes">
+
+    <div
+      class="col-12 col-md-6 col-lg-4 p-4 d-flex justify-content-center"
+      *ngFor="let item of items"
+    >
+      <app-item-card [item]="item"></app-item-card>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,68 @@
+.border {
+      border: none !important;
+}
+
+thead {
+    text-align: center;
+    width: auto;
+    height: auto;
+    color: #FFB362;
+    background-image: url(../../../assets/images/card/background-image.jpg);
+    text-shadow: 2px 5px 5px #000000;
+    font-size: 15pt;
+    font: 15pt caption;
+}
+
+img {
+    border-radius: 10px;
+}
+
+tbody {
+    width: auto;
+    height: auto;
+    color: #000000;
+    text-shadow: 2px 5px 5px #000000;
+    font-size: 15pt;
+    font: 15pt icon; 
+}
+tr {
+    text-align: center;
+    line-height: 70px;
+    width: auto;
+    height: auto;
+    background: rgb(253,187,45);
+    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(191,166,140,1) 100%);
+}
+
+#sub, #add, #del { 
+    margin: 5px;
+    border-radius: 10px;
+    color: #000000;
+}
+#btn {
+    margin: 15px;
+    background: rgb(253,187,45);
+    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(191,166,140,1) 100%);
+    border-radius: 40px;
+    align-items: center;
+    color: #000000;
+    box-shadow: 0 10px 10px #000000;;
+}
+
+.btn-card-del, .btn-card-add, .btn-card-sub {
+    box-shadow: 0 10px 10px #000000;;
+}
+
+.background-if {
+    height: 200px;
+    border-radius: 10px;
+    background: url(../../../assets/images/card/background-image.jpg) no-repeat center;
+    background-size: cover;
+    color: #FFB362;
+    text-shadow: 2px 2px 5px #5a3003;
+    font-size: 40pt;
+    font: 35pt italic;
+}
+p {
+    padding-top: 70px;
+}

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center p-5 background d-flex justify-content-center">
+    <div class="header">
+      <div class="avatar">
+        <img class="img"
+             [src]=" form && form.value['imageUrl'] ? form.value['imageUrl'] : '../../assets/portfolio/no-avatar.svg'"
+             width="200" height="180">
+      </div>
+      <div class="card-body">
+        <button class="btn btn-primary" (click)="onUpdate()">Update</button>
+      </div>
+    </div>
+
+    <div class="btn-boks">
+      <form [formGroup]="form" novalidate *ngIf="form">
+        <div>
+          <input class="text-login text-center form-control"
+                 formControlName="login" type="text" placeholder="login">
+        </div>
+        <div>
+          <input class="text-phone text-center form-control"
+                 formControlName="phone" type="text" placeholder="phone">
+        </div>
+        <div>
+          <input class="text-file text-center form-control"
+                 formControlName="imageUrl" type="text"
+                 placeholder="imageUrl">
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

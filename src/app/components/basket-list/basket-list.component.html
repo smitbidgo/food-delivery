@@ -1,0 +1,41 @@
+<div class="table-responsive-sm border" *ngIf="cart.getValue().length;else unset">
+  <table class="table">
+    <thead>
+    <th>image</th>
+    <th>name</th>
+    <th>weight</th>
+    <th>price</th>
+    <th>quantity</th>
+    <th></th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of cart.getValue()">
+      <td><img [src]="item.imageUrl" alt="item" width="60"></td>
+      <td>{{item.name}}</td>
+      <td>{{item.weight}}</td>
+      <td>{{item.price|currency}}</td>
+      <td>{{item.quantity}}</td>
+      <td>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button (click)="quantityOperation(item._id, true)" id="add" type="button"
+                  class="btn btn-success d-flex justify-content-start btn-card-add">+
+          </button>
+          <button (click)="quantityOperation(item._id, false)" id="sub" type="button"
+                  class="btn btn-warning d-flex justify-content-center btn-card-sub">-
+          </button>
+          <button (click)="deleteItem(item._id)" id="del" type="button"
+                  class="btn btn-danger d-flex justify-content-end btn-card-del"> del
+          </button>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <a routerLink="/order" id="btn" class="btn btn-warning float-right">Купити ({{totalPrice|currency}})</a>
+</div>
+<ng-template #unset>
+  <div class="text-center background-if">
+    <p>Корзина пуста</p>
+  </div>
+</ng-template>
+

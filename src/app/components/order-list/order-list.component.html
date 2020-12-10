@@ -1,0 +1,23 @@
+<div class="bacground background">
+  <h5 class="text-center m-0 p-2"> Кількість замовлень: {{orderList.length}}</h5>
+  <div *ngFor="let order of orderList; let i = index;" class="sum card  mb-3">
+    <h3 class="card-header text-center"><b>Замовлення № {{i + 1}}</b></h3>
+    <div class="user card-header">
+      <b>user: {{order.user['login']}}</b><br>
+      <b>email: {{order.email}}</b><br>
+      <b>address: {{order.address}}</b>
+    </div>
+    <div class="bodi">
+      <ul *ngFor="let item of order.items">
+        <li>
+          <b class="onItem">{{item.item['name']}} ({{item['quantity']}})</b>
+        </li>
+      </ul>
+    </div>
+    <div class="test text-right">
+      <b>{{order['totalPrice']|currency}}</b><br>
+      <b>{{order.date|date}}</b>
+    </div>
+  </div>
+</div>
+
